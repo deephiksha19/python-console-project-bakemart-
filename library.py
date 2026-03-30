@@ -8,7 +8,7 @@ menu = {
     4: {"name": "Brownie", "price": 120},
     5: {"name": "Donut", "price": 80},
     6: {"name": "Muffin", "price": 90},
-    7: {"name": "Macaron", "price": 135}
+    7: {"name": "Macaron", "price": 35}
 }
 
 cart = {}
