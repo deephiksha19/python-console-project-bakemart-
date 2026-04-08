@@ -76,7 +76,7 @@ def view_cart():
         price = menu[item]["price"]
         cost = price * qty
         total += cost
-        print(f"{name} x{qty} = ₹{cost}")
+        print(f"{name}x{qty} = ₹{cost}")
     
     print("Total =", total)
 
@@ -107,7 +107,7 @@ def generate_bill():
         price = menu[item]["price"]
         cost = price * qty
         total += cost
-        print(f"{name} x{qty} = ₹{cost}")
+        print(f"{name}({price}) x{qty} = ₹{cost}")
 
     print("\nSubtotal =", total)
 
@@ -122,8 +122,8 @@ def generate_bill():
     print(f"GST (5%) = ₹{gst}")
 
     # Delivery Charge
-    delivery_charge = 50
-    print("Delivery Charge = ₹50")
+    delivery_charge = random.choice([30, 50, 80])
+    print(f"Delivery Charge = ₹{delivery_charge}")
 
     # Final Amount
     final_total = total - discount + gst + delivery_charge
